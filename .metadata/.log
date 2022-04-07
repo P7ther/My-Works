@@ -8856,3 +8856,23 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-07 14:19:50.610
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-07 14:19:50.648
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-07 14:20:52.802
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-07 14:20:52.806
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-04-07 14:20:57.511
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Admin\Downloads\eclipse\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar D:\New_WorkSpace_Automation\SeleniumPractics\bin C:\Users\Admin\Downloads\eclipse\plugins\org.testng_7.4.0.r202105021533.jar C:\Users\Admin\Downloads\eclipse\plugins\com.beust.jcommander_1.78.0.jar C:\Users\Admin\Downloads\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Admin\Downloads\eclipse\plugins\org.yaml.snakeyaml_1.21.0.jar C:\Users\Admin\Downloads\eclipse\plugins\org.webjars.jquery_3.5.1.jar C:\Users\Admin\Downloads\selenium-server-4.1.2.jar C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0.jar C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-javadoc.jar C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-sources.jar C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-tests.jar C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-test-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65215 -protocol json -d D:\New_WorkSpace_Automation\SeleniumPractics\test-output C:\Users\Admin\AppData\Local\Temp\testng-eclipse-254234818\testng-customsuite.xml
+java -ea -classpath C:\Users\Admin\Downloads\eclipse\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:D:\New_WorkSpace_Automation\SeleniumPractics\bin:C:\Users\Admin\Downloads\eclipse\plugins\org.testng_7.4.0.r202105021533.jar:C:\Users\Admin\Downloads\eclipse\plugins\com.beust.jcommander_1.78.0.jar:C:\Users\Admin\Downloads\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Admin\Downloads\eclipse\plugins\org.yaml.snakeyaml_1.21.0.jar:C:\Users\Admin\Downloads\eclipse\plugins\org.webjars.jquery_3.5.1.jar:C:\Users\Admin\Downloads\selenium-server-4.1.2.jar:C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0.jar:C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-javadoc.jar:C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-sources.jar:C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-tests.jar:C:\Users\Admin\Downloads\commons-io-2.11.0\commons-io-2.11.0-test-sources.jar org.testng.remote.RemoteTestNG -serport 65215 -protocol json -d D:\New_WorkSpace_Automation\SeleniumPractics\test-output C:\Users\Admin\AppData\Local\Temp\testng-eclipse-254234818\testng-customsuite.xml

@@ -1,0 +1,11 @@
+package javaStream8;
+
+public class SortingWebTable 
+{
+	
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

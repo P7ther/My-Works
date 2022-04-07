@@ -1,0 +1,37 @@
+package javaStream8;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SortingWebTable 
+{
+	
+	public static void main(String[] args) 
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Downloads\\DriverChrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+
+		//Click on the column
+		driver.findElement(By.xpath("//tr/th[1]")).click();
+		//Capture all webelements into list
+		//capture text of all webelements into new(original) list
+		//sort on the orginal list of step 3
+		//compare orginal list vs sorted list
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

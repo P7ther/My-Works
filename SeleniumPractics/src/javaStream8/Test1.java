@@ -1,8 +1,10 @@
 package javaStream8;
 
+import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.testng.Assert;
@@ -65,7 +67,7 @@ public class Test1
 		
 	}
 	
-	@Test
+	//@Test
 	public void streamMap() 
 	{
 		ArrayList<String> names = new ArrayList<String>();
@@ -96,7 +98,12 @@ public class Test1
 	public void streamCollect() 
 	{
 		
-		
+		List<Integer> name1= Arrays.asList(3,2,2,7,5,7,9,7);
+		//print unique number from this array
+		//sort the array
+		//name1.stream().distinct().forEach(s->System.out.println(s));
+		List <Integer>li=name1.stream().distinct().sorted().collect(Collectors.toList());
+		System.out.println(li.get(2));
 		
 		
 	}
