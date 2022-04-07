@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;checkSystem.MaxPriceCheck.java&apos; to &apos;SauceTestStream.java&apos;&#x0D;&#x0A;- Original project: &apos;ProjectSystemChecking&apos;&#x0D;&#x0A;- Original element: &apos;checkSystem.MaxPriceCheck.java&apos;&#x0D;&#x0A;- Renamed element: &apos;checkSystem.SauceTestStream.java&apos;" description="Rename compilation unit &apos;MaxPriceCheck.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;checkSystem{MaxPriceCheck.java" name="SauceTestStream.java" references="false" stamp="1644316278011" version="1.0"/>
+</session>

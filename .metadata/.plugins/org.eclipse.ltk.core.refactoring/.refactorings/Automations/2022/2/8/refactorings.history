@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;stepDefination&apos; to &apos;stepDefinations&apos;&#x0D;&#x0A;- Original project: &apos;Automations&apos;&#x0D;&#x0A;- Original element: &apos;Automations/src/test/java/stepDefination&apos;&#x0D;&#x0A;- Renamed element: &apos;Automations/src/test/java/stepDefinations&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;stepDefination&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;stepDefination" name="stepDefinations" qualified="false" references="true" stamp="1645190166166" textual="false" version="1.0"/>
+</session>

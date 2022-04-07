@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Automations&apos;&#x0D;&#x0A;- Original project: &apos;Automations&apos;&#x0D;&#x0A;- Original element: &apos;Automations/src/test/java/Cucumber.Automations&apos;" description="Delete element" element1="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;Cucumber.Automations" element2="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;Cucumber" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1645424814447" subPackages="false" version="1.0"/>
+</session>
