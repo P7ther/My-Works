@@ -24,6 +24,7 @@ public class IssuePage
 	By dropdwn  =By.xpath("//select[@id='multipck_value1']");
 	By copun    =By.xpath("//span[@id='span11']");
 	By Submtbtn =By.xpath("//button[contains(@class,'btn btn-custom btn-fx btn-promote paypal_pay_btn1')]");
+	By instaSubmit =By.cssSelector("[class=' btn btn-custom btn-fx btn-promote instamojo_pay1']");
 	
 	 public void ClickLoginBtn() 
 	 {
@@ -63,7 +64,7 @@ public class IssuePage
 		 //  driver.findElement(copun).click();
 		 Thread.sleep(5000);
 		 System.out.println("Section is Working");
-		 driver.findElement(Submtbtn).click();
+		 driver.findElement(instaSubmit).click();
 		 // Select Details from Static DropDown That Present in Add Credit.
 		  
 		 //    WebElement Staticdropdown = driver.findElement(dropdwn);

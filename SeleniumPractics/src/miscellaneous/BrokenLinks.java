@@ -28,7 +28,7 @@ public class BrokenLinks {
 		// Java method will call URL's and gets you the status code
 		// If status code >400 then that url is not working-> link which tied to url is broken
 		
-		 List<WebElement> links=   driver.findElements(By.cssSelector("li[class='gf-li'] a"));
+		 List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 	      SoftAssert a =new SoftAssert();
 
 		

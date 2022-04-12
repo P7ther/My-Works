@@ -1,0 +1,125 @@
+package impSections;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class PricingSection {
+	
+	WebDriver driver;
+	
+	public static void main(String[]args) throws IOException, InterruptedException  {
+		
+		
+		Properties prop= new Properties();
+
+		FileInputStream ip = new FileInputStream("C:\\Users\\ELP\\eclipse-workspace\\OfficeProject\\src\\allProject\\config.properties");
+		prop.load(ip);
+		System.out.println(prop.getProperty("browser"));
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELP\\Downloads\\Chrome\\chromedrive\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+
+		 //System.setProperty("webdriver.gecko.driver", "C:\Users\ELP\Downloads\Chrome\geckodriver\\geckodriver.exe");
+		 //WebDriver driver = new FirefoxDriver();
+		 
+
+		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+
+		driver.get(prop.getProperty("url"));
+
+		//Select The No of Pr details from Dropdown.
+		Select fruits = new Select(driver.findElement(By.xpath("//select[@id='changePrCount']")));
+		fruits.selectByIndex(1);
+
+		//Choose Tire And Click on Order Now.      
+		WebElement btn1 = driver.findElement(By.xpath("//tbody/tr[45]/td[3]/a[1]"));
+		btn1.click();
+
+                          
+                          //Give All Details on the from 
+                          driver.findElement(By.xpath("//input[@id='fname']")).sendKeys(prop.getProperty("FName"));
+                          driver.findElement(By.xpath("//input[@id='lname']")).sendKeys(prop.getProperty("LName"));
+                          driver.findElement(By.xpath("//input[@id='email']")).sendKeys(prop.getProperty("Gmail"));
+                          driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Pwd");
+
+
+                          // File src = new File("C:\\Users\\ELP\\Documents\\Book7.xlsx");
+                          //  FileInputStream fis = new FileInputStream(src);
+                          // XSSFWorkbook wb = new XSSFWorkbook(fis);
+                          // XSSFSheet sheet = wb.getSheetAt(0);
+                          //  Row row = sheet.getRow(0);
+
+
+                          //Get Data from last row.
+                          //Initialize that row as a random number.
+                          //int rowcount=sheet.getLastRowNum();
+                          //Random rand = new Random();
+                          //int int_random = rand.nextInt(rowcount);
+                          //System.out.println(int_random);
+                          // String Name1 =sheet.getRow(int_random).getCell(0).getStringCellValue();
+                          //System.out.println(Name);
+
+                          //driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Gmail");
+                          //driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Pwd");
+
+
+              
+                //click on Submit Button
+                try {
+                	driver.findElement(By.xpath("//button[@id='instamojo']")).click();
+                } catch (Exception e) {
+                	JavascriptExecutor executor = (JavascriptExecutor) driver;
+                	executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//button[@id='instamojo']")));
+                }
+                
+                //Details given in Instamojo
+
+                driver.findElement(By.xpath("//input[@id='address']")).sendKeys(prop.getProperty("Address"));
+   
+                //Select data from the dropdown.
+                Select city = new Select(driver.findElement(By.xpath("//select[@id='state_id']")));
+                city.selectByIndex(29);
+                
+                driver.findElement(By.xpath("//input[@id='phoneno']")).sendKeys(prop.getProperty("phone"));
+
+                driver.findElement(By.xpath("//button[@id='instamojo_payform']")).click();
+
+                
+                //Backward the Browser 
+                driver.navigate().back();
+
+                driver.navigate().back();
+                
+				/*
+				 * //tbody/tr[1]/td[2]/a[1] //tbody/tr[1]/td[3]/a[1] //tbody/tr[1]/td[4]/a[1]
+				 * //tbody/tr[1]/td[5]/a[1] //tbody/tr[1]/td[6]/a[1]
+				 * 
+				 * String before_xpath="//tbody/tr[1]/td["; String After_xpath="]/a[1]";
+				 * 
+				 * for(int i=2;i<=6;i++) {
+				 * 
+				 * driver.findElement(By.xpath(before_xpath+i+After_xpath)).click();
+				 * 
+				 * }
+				 * 
+				 */
+            
+         
+            }
+
+         }
