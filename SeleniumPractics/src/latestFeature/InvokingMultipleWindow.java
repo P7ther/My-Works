@@ -49,7 +49,6 @@ public class InvokingMultipleWindow
 		//Get Hight and Width
 		System.out.println(name.getRect().getDimension().getHeight());
 		System.out.println(name.getRect().getDimension().getWidth());
-		
 
 	}
 

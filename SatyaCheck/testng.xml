@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department"> <!--A suit can have multiple module-->
+                               <!--Suit is Parent to the test folder-->
+
+  <!--This is one test Folder-->
+  <test  name="Personal Loan"> <!--in Loan Department this is our module-->
+    <classes>
+ 
+      <class name="test.Day1"> <!--this Is our class file,Inside class file there are multiple test cases-->
+          <methods>
+            <include name ="Demo"/> <!--In this methos user only saw the output of perticular test case or test case output will not showing-->
+          </methods>
+      </class>
+      <class name="test.Day2"/>
+      <class name="test.Day4"/>
+
+    </classes>
+
+  </test> 
+
+<!-- This Is another folders -->
+ <test name="Car Loan"> <!-- In a Suit there could be multiple test folders -->
+     <classes>
+       <class name="test.Day3">
+          <methods>
+             <exclude name="Api.*"/> <!--When you don't want to run/remove these test cases-->
+                                        <!--When user give ".* "means it will stop those test cases-->
+           </methods>
+      </class>
+ </classes>
+</test>
+</suite> <!-- Suite -->

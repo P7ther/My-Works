@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department"> <!--A suit can have multiple module-->
+
+  <test  name="Personal Loan"> <!--in Loan Department this is our module-->
+
+   <packages>
+     <package name ="test"/> <!--In this package it will run all the test case those are present-->
+  </packages>
+
+</test>
+</suite>

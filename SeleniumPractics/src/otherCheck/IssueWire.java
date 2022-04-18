@@ -50,7 +50,7 @@ public class IssueWire
     	// driver.findElement(By.xpath("//button[@id='instamojo1']")).click();
     	 driver.findElement(By.xpath("//button[contains(@class,'btn btn-custom btn-fx btn-promote paypal_pay_btn1')]")).click();
 	     Thread.sleep(2000);
-	     driver.navigate().back();
+	     driver.navigate().back(); 
 	   // driver.switchTo().window(ChildId); 
      }
 	   // driver.close();
